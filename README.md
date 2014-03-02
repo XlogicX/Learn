@@ -12,26 +12,17 @@ This project is an attempt to make a skeleton for a few languages as a point of 
 Most of these will be somewhat sparse on comments for readability, with exception to the perl script. This script is heavily littered with comments. If you have very little scripting/programming experience, look at this one first; as it explains each part at a very granular level.
 
 Below are my "challenges" for each language:
-
-printing (along with concatenation and variable interpolation)
-take input
-
-how to math
-
-variables and arrays
-
-logic/comparisons
-
-loops
-
-subroutines
-
-handling files
+-printing (along with concatenation and variable interpolation)<br>
+-take input<br>
+-how to math<br>
+-variables and arrays<br>
+-logic/comparisons<br>
+-loops<br>
+-subroutines<br>
+-handling files<br>
 
 
 Here is a small list of useful things, but not something I would consider essential for a skeleton:
-modules (importing external code)
-
-regex
-
-hashes
+-modules (importing external code)<br>
+-regex<br>
+-hashes<br>
