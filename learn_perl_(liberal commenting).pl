@@ -128,7 +128,7 @@ close FILE;	#close it back up
 sub check_length {					#We declare the subroutine with the "sub" keyword
 	my $value = shift;				#the "shift" word gets us the value passed to the subroutine
 	my $length = length($value);	#the length() function computes the length of a variable
-	if ($length > 30) {			#is $length greater than (gt) 30?
+	if ($length gt 30) {			#is $length greater than (gt) 30?
 		print "You didn't follow the rules, enter a line that is less than 30 characters:\n";
 		$line = <STDIN>;			#Ask for a different input
 		check_length($line);		#OMG recursion
