@@ -12,6 +12,7 @@ This project is an attempt to make a skeleton for a few languages as a point of 
 Most of these will be somewhat sparse on comments for readability, with exception to the perl script. This script is heavily littered with comments. If you have very little scripting/programming experience, look at this one first; as it explains each part at a very granular level.
 
 Below are my "challenges" for each language:<br>
+-comments<br>
 -printing (along with concatenation and variable interpolation)<br>
 -take input<br>
 -how to math<br>
