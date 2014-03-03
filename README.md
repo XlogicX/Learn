@@ -13,21 +13,22 @@ Most of these will be somewhat sparse on comments for readability, with exceptio
 
 Below are my "challenges" for each language:
 =====
--comments<br>
--printing (along with concatenation and variable interpolation)<br>
--take input<br>
--how to math<br>
--variables and arrays<br>
--logic/comparisons<br>
--loops<br>
--subroutines<br>
--handling files<br>
+Note that depending on the language, certain things may have to be done differently. For example, file IO with javascript (maybe use textboxes instead), or flow control in assembly (if/then/else if functionality is possible, it just looks a lot "different").<br><br>
+* comments<br>
+* printing (along with concatenation and variable interpolation)<br>
+* take input<br>
+* how to math<br>
+* variables and arrays<br>
+* logic/comparisons<br>
+* loops<br>
+* subroutines<br>
+* handling files<br>
 
 
 Here is a small list of useful things, but not something I would consider essential for a skeleton:<br>
--modules (importing external code)<br>
--regex<br>
--hashes<br>
+* modules (importing external code)<br>
+* regex<br>
+* hashes<br>
 
 Script/Program Operation
 =====
