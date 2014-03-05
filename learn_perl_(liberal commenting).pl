@@ -35,7 +35,7 @@ use strict;
 
 #Consider the below our, "hello world". the \n is a way to tell the script
 #to go to the next line.
-print "Welcom to our example perl script\n";
+print "Welcome to our example perl script\n";
 
 #Just another print statement prompting for an input
 print "please enter your file name: ";
