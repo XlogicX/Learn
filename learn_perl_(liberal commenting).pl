@@ -91,11 +91,11 @@ $i = 0;		#reset $i (our iterator) back to 0
 #below is an obscure perl hack. when assigning an @array to a $variable, the number
 #of elements of the array is what is actually stored in the $variable. So if an
 #array had 7 values, $lines would contain '7' after the below command
-my $lines = @line_length;
+my $lines = $line_count;
 my $total_chars = 0;		#total characters in whole file
 #a foreach loop would be much more appriopriate, but this method is just more
 #exposure to some fundamentals
-while ($lines gt $i) {		#while the amount of lines is still greater than times looped
+while ($lines > $i) {		#while the amount of lines is still greater than times looped
 	#take the nth ($i) value of $line_length and add it to our total chars
 	$total_chars += $line_length[$i];
 	$i++;
