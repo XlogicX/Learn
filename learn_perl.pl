@@ -29,9 +29,9 @@ print "Our last line was:\n$last_line\n";
 
 #Count the total characters
 $i = 0;									#init loop counter to 0
-my $lines = @line_length;				#get the number of lines
+my $lines = $line_count;				#get the number of lines
 my $total_chars = 0;					#init the total character counter
-while ($lines gt $i) {					#while we still have lines
+while ($lines > $i) {					#while we still have lines
 	$total_chars += $line_length[$i];	#tally the total characters
 	$i++;								#Next line
 }
