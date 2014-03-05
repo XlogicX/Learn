@@ -1,7 +1,14 @@
 Learn
 =====
 
-Learn the very basics of different languages, currently 6 different scripting languages (perl, python, ruby, lua, php, and javascript).
+Learn the very basics of different languages, currently 7 different scripting languages:
+*perl
+*python
+*ruby
+*lua
+*javascript
+*php
+*bash
 
 Description
 =====
