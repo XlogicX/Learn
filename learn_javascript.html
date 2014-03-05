@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Learn JavaScript</title>
+</head>
+<body>
+<form name="data">
+Put a few lines of text in the box below and click process
+<br><br>
+<textarea cols="100" rows="10" name="textdata">
+</textarea><br>
+<button type="button" id="process">Process</button>
+<div id="stats"></div>
+<script type="text/javascript">
+
+var button = document.getElementById("process");		//get the button into the script
+button.addEventListener('click', processinput, false);	//attach a function to it
+
+//The main function
+function processinput(e) {
+	var text = window.document.data.textdata.value;		//get the text from box above
+	var lines = text.split('\n');						//get individual lines into an array
+	var last_line;							//init var for last line
+	var line_count = lines.length;			//get the amount of lines
+	var line_length = [];					//init array for length of individual lines
+	var i = 0;								//init loop counter (i don't generally use "for" loops)
+	while (line_count > i) {				//while we still have lines
+		last_line = lines[i];				//note the line, will be last line on last loop
+		line_length[i] = lines[i].length;	//note length of line in our array of line lengths
+		i++;								//inc
+	}
+
+	//note last lines
+	window.document.getElementById("stats").innerHTML="Our last line was: \"" + last_line;
+
+	//Count the total characters
+	i = 0;						//init loop counter to 0
+	var total_chars = 0;		//init the total character counter
+	while (line_count > i) {	//while we still have lines
+		total_chars += line_length[i];	//tally the total characters
+		i++;					//Next line
+	}
+
+	//print more stats
+	window.document.getElementById("stats").innerHTML += ".\" The text had " + line_count + " lines and "  + total_chars + " total characters\n";
+
+	setTimeout(getline,1000);	//wait a second before prompting for another line
+	
+	//prompt for another line of text
+	function getline(e) {
+		var another_line = prompt("Please enter another line that is less than 30 characters","replace this text");
+		if (another_line.length > 30) {		//if it is more than 30 lines, ask again less nicely
+			complain();
+		} else {							//Otherwise, append it to the textbox
+			window.document.data.textdata.value += "\n" + another_line;
+		}
+	}
+
+	function complain(e) {		//pretty much the same as getline(), just different prompt
+		another_line = prompt("You didn't follow the rules, please enter another line that is less than 30 characters","replace this text");
+		if (another_line.length > 30) {
+			complain();
+		} else {
+			window.document.data.textdata.value += "\n" + another_line;
+		}
+	}
+}
+</script>
+</form>
+</body>
+</html>
