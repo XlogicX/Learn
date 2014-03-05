@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-print "Welcom to our example perl script\n";
+print "Welcome to our example perl script\n";
 
 print "please enter your file name: ";
 my $filename = <STDIN>;		#Perl way to get input
