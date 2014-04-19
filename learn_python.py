@@ -30,7 +30,7 @@ i = 0					#loop iterator init
 total_chars = 0			#set total characters to 0
 while (line_amount > i):	#While we still have lines
 	total_chars += line_length[i]	#tally up the total amount of chars so far
-	i += 1;				#next iteration
+	i += 1			#next iteration
 
 #Give som file stats
 print "The file had %s lines and %s total characters\n" % (line_amount,total_chars)
