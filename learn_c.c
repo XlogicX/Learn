@@ -44,11 +44,7 @@ main() {
 	checklength(user_line);		//run our function to check the length of the line
 
 	textfile = fopen(filename, "a");	//open file in append mode
-	if(!textfile) {
-		printf("Your file doesn't exist, are we even real?\n");
-		exit (1);
-	}
-	fprintf(textfile, "\n%s\n", user_line);		//append the user provided line to the file
+	fprintf(textfile, "%s\n", user_line);		//append the user provided line to the file
 	fclose (textfile);							//and close the file
 }
 
