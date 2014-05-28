@@ -1,7 +1,7 @@
 Learn
 =====
 
-Learn the very basics of different languages, currently 7 different scripting languages:
+Learn the very basics of different languages, currently 8 different languages:
 * perl
 * python
 * ruby
@@ -9,6 +9,7 @@ Learn the very basics of different languages, currently 7 different scripting la
 * javascript
 * php
 * bash
+* C
 
 Description
 =====
