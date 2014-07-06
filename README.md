@@ -72,6 +72,7 @@ Overall opcodes/concepts demonstrated:
 * Conditions: jl, jg, je, jne, jmp, cmp
 * Subroutines: call, ret
 * randomness: rdrand
+* no operation at all: nop
 * syscall: sys_exit, sys_write
 
 There is arguably a lot not covered, but that isn't the purpose of this project. The above opcodes should certainly get you in the right direction; they are the most common
