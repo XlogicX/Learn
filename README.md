@@ -11,6 +11,7 @@ Learn the very basics of different languages, currently 8 different languages:
 * bash
 * C
 * Assembly (nasm/ld/linux[elf64] stack)
+* Assembly (nasm/ld/linux[elf32] stack)
 
 Description
 =====
