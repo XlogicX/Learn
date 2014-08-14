@@ -1,3 +1,17 @@
+Environment
+=====
+OS: Ubuntu Linux (12.04 LTS) 32-bit
+
+Editor: SublimeText
+
+Assembler: Nasm
+
+Linker: ld
+
+Commands to assembly and link: [will add commands soon]
+
+Execution: ./skeleton
+
 ASM diff
 =====
 The approach to this program is much different than the other non-assembly programs in this project. Although we could use the assembler programs (nasm/masm/gas) many features and macros, we don't. Why? the focus for this is on assembly, not nasm, not linux/windows, and none of that HLA BS. This could be a much more clear program if I fully used HLA and all the nasm features, but it wouldn't be as useful for demonstrating actual assembly.

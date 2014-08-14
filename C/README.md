@@ -1,14 +1,12 @@
 Environment
 =====
-OS: Ubuntu Linux (12.04 LTS) 64-bit
+OS: Linux
 
 Editor: SublimeText
 
-Assembler: Nasm
+Compiler: gcc
 
-Linker: ld
-
-Commands to assembly and link: [will add commands soon]
+Commands to compile: [will add commands soon]
 
 Execution: ./skeleton
 
@@ -28,7 +26,6 @@ Overall opcodes/concepts demonstrated:
 * Shiftiness: shl, shr, rol, ror
 * Conditions: jl, jg, je, jne, jmp, cmp
 * Subroutines: call, ret
-* randomness: rdrand
 * no operation at all: nop
 * syscall: sys_exit, sys_write
 
