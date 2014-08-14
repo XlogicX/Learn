@@ -56,24 +56,12 @@ Script/Program Operation
 * ---Use subroutine/function to validate that the line is less than 30 characters
 * Write this user supplied line to the file (append)
 
-Some Notes on the Differences in the Assembly Examples
+A Language for each Directory
 =====
-The approach to this program is much different than the other non-assembly programs in this project. Although we could use the assembler programs (nasm/masm/gas) many features and macros, we don't. Why? the focus for this is on assembly, not nasm, not linux/windows, and none of that HLA BS. This could be a much more clear program if I fully used HLA and all the nasm features, but it wouldn't be as useful for demonstrating actual assembly.
+Each directory should at least have a skeleton script that covers most of what is described above.
 
-It should also be noted that the program won't "appear" to do much; it will just print "Hello World!" to the terminal. Too "see" the full effect of all of these opcodes, it  would be ideal to run this in a debugger (I prefer edb (Evan's Debugger) on the Linux  platform and OllyDbg on Windows).
+There may also be extra scripts to cover additional features that are unique to the language, or just useful in general, but would significantly add to the complexity or size of the skeleton script
 
-Overall opcodes/concepts demonstrated:
-* Registers
-* Movement: mov, xchg
-* Stack: push, pop
-* Maths: add, sub, mull, div, inc, dec
-* Logic: and, or, not, xor
-* Memory
-* Shiftiness: shl, shr, rol, ror
-* Conditions: jl, jg, je, jne, jmp, cmp
-* Subroutines: call, ret
-* randomness: rdrand
-* no operation at all: nop
-* syscall: sys_exit, sys_write
+If there are differences in the skeleton, from filehandle differences (javascript) to completely different skeleton goals in general (Assembly), then there should be some "diff" notes in the README for that folder. The README should also contain "environmental" notes; this merely describes my personal environment in getting these programs/scripts running (editor, compiler, command to execute, etc...)
 
-There is arguably a lot not covered, but that isn't the purpose of this project. The above opcodes should certainly get you in the right direction; they are the most common
+
