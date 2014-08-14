@@ -12,6 +12,9 @@ Commands to assembly and link: [will add commands soon]
 
 Execution: ./skeleton
 
+Debugger (USE THIS when learning): edb (Evans Debugger). This guide is okay: http://www.benmccann.com/blog/installing-evans-debugger-in-ubuntu/
+Also, REMnux and Kali should come with this debugger pre-installed (although you still have to apt-get nasm)
+
 ASM diff
 =====
 The approach to this program is much different than the other non-assembly programs in this project. Although we could use the assembler programs (nasm/masm/gas) many features and macros, we don't. Why? the focus for this is on assembly, not nasm, not linux/windows, and none of that HLA BS. This could be a much more clear program if I fully used HLA and all the nasm features, but it wouldn't be as useful for demonstrating actual assembly.
