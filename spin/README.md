@@ -23,4 +23,4 @@ We are acheiving completely different goals than the goals of most of the other 
 
 This skeleton program works with 7 total pins of input/output. pin 0 is input, pins 16,18,19,20,22, and 23 as output.
 
-The program starts with repeatedly turning on pin 16 (LED) with increasing brightness, until it is at a maximum brightness,and then it repeats sending a "high" to pin 0 (input) will go to the next output pin (18 would come after 16), when all pins are cycled through, it comes back to pin 16 as the output pin
+The program starts with repeatedly turning on pin 16 (LED) with increasing brightness, until it is at a maximum brightness,and then it repeats. Sending a "high" to pin 0 (input) will go to the next output pin (18 would come after 16), when all pins are cycled through, it comes back to pin 16 as the output pin
