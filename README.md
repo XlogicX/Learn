@@ -1,7 +1,7 @@
 Learn
 =====
 
-Learn the very basics of different languages, currently around 11 different languages:
+Learn the very basics of different languages, currently around 12 different languages:
 * perl
 * python
 * ruby
@@ -13,6 +13,7 @@ Learn the very basics of different languages, currently around 11 different lang
 * spin (propeller microcontroller)
 * Assembly (nasm/ld/linux[elf64] stack)
 * Assembly (nasm/ld/linux[elf32] stack)
+* Assembly (Propeller)
 
 Description
 =====
