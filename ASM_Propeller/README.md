@@ -12,7 +12,9 @@ Execution: F11
 Diff
 =====
 Printing: We are instead outputting a signal to a bank of pins (LEDs)
+
 Take Input: We are taking a high/low value as input from a pin
+
 Handling Files: We are not dealing with files here
 
 Function of the program
@@ -23,13 +25,21 @@ Overall opcodes/concepts demonstrated:
 
 Core/"Cog" Handling: cogid, cogstop, cognew
 I/O: ina, outa, dira
+
 Movement: mov
+
 Maths: add, sub
+
 Logic: and, or, xor
+
 Memory
+
 Shiftiness: shl, shr
+
 Conditions: jne, jmp, cmp
+
 Subroutines: call, ret
+
 no operation at all: nop
 
 There is arguably a lot not covered, but that isn't the purpose of this project. The above opcodes should certainly get you in the right direction; they are the most common. Of notable difference from x86, Registers aren't exactly the same concept, There is no Stack, and if you want flags to be set, you have to explicity code for this.
