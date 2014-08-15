@@ -10,6 +10,7 @@ Learn the very basics of different languages, currently 8 different languages:
 * php
 * bash
 * C
+* spin (propeller microcontroller)
 * Assembly (nasm/ld/linux[elf64] stack)
 * Assembly (nasm/ld/linux[elf32] stack)
 
