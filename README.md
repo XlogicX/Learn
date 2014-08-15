@@ -1,7 +1,7 @@
 Learn
 =====
 
-Learn the very basics of different languages, currently 8 different languages:
+Learn the very basics of different languages, currently around 11 different languages:
 * perl
 * python
 * ruby
