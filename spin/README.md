@@ -12,7 +12,9 @@ Execution: F11
 Diff
 =====
 Printing: We are instead outputting a signal to a bank of pins (LEDs)
+
 Take Input: We are taking a high/low value as input from a pin
+
 Handling Files: We are not dealing with files here
 
 Function of the program
