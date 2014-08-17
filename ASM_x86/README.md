@@ -1,6 +1,7 @@
 Environment
 =====
-OS: Ubuntu Linux (12.04 LTS) 32-bit
+OS: Ubuntu Linux (12.04 LTS) 32-bit<br>
+Kali Linux (comes with nasm/ld and edb pre-installed)
 
 Editor: SublimeText
 
