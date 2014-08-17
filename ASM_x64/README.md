@@ -1,6 +1,7 @@
 Environment
 =====
-OS: Ubuntu Linux (12.04 LTS) 64-bit
+OS: Ubuntu Linux (12.04 LTS) 64-bit<br>
+Kali Linux has nasm and edb, but haven not tested this program in its 64-bit version (yet)
 
 Editor: SublimeText
 
@@ -8,7 +9,9 @@ Assembler: Nasm
 
 Linker: ld
 
-Commands to assembly and link: [will add commands soon]
+Commands to assembly and link:<br>
+nasm -f elf64 skeleton.asm<br>
+ld skeleton.o -o skeleton
 
 Execution: ./skeleton
 
