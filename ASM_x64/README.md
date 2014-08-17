@@ -1,7 +1,6 @@
 Environment
 =====
 OS: Ubuntu Linux (12.04 LTS) 64-bit<br>
-Kali Linux has nasm and edb, but haven not tested this program in its 64-bit version (yet)
 
 Editor: SublimeText
 
@@ -16,7 +15,7 @@ ld skeleton.o -o skeleton
 Execution: ./skeleton
 
 Debugger (USE THIS when learning): edb (Evans Debugger). This guide is okay: http://www.benmccann.com/blog/installing-evans-debugger-in-ubuntu/
-Also, REMnux and Kali should come with this debugger pre-installed (although you still have to apt-get nasm)
+Kali Linux has nasm and edb, but haven not tested this program in its 64-bit version (yet)
 
 ASM diff
 =====
