@@ -9,8 +9,8 @@ Assembler: Nasm
 Linker: ld
 
 Commands to assemble and link:<br> 
-nasm -f elf hello.asm<br>
-ld -m elf_i386 -s -o hello hello.o
+nasm -f elf skeleton.asm<br>
+ld -m elf_i386 -s -o skeleton skeleton.o
 
 Execution: ./skeleton
 
