@@ -66,4 +66,6 @@ There may also be extra scripts to cover additional features that are unique to 
 
 If there are differences in the skeleton, from filehandle differences (javascript) to completely different skeleton goals in general (Assembly), then there should be some "diff" notes in the README for that folder. The README should also contain "environmental" notes; this merely describes my personal environment in getting these programs/scripts running (editor, compiler, command to execute, etc...)
 
-
+Some Meat
+=====
+If Each language has a 'skeleton' of basic functions of a programming language, everything else would be 'meat.' Some of the languages in here may have extra files in addition to just a skeleton in order to suppliment popular features of a language or in general. The goal is to keep the 'skeleton' to about as much code as can be reasonably printed on one page. But some languages may have some really awesome features, however, it may take a bit of code to go through these features. A great example of this is Regular Expressions. Regular Expressions can be useful in several of these languages, however, are not crucial to the bare bones of the language. Adding regex to one of these skeletons would increase the line count moderately enough to nessesitate its own 'meaty' script.
