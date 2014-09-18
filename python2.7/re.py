@@ -19,6 +19,7 @@ extractions = re.compile(r"[^\d]+(\d+).+\s([0-9a-f]+)$")		#Our regex; groups we 
 peices = extractions.match(parse_this)							#exec our re and result in peices
 print "Number: " + peices.group(1) + " Hex:" + peices.group(2)	#display both extracted groups
 
+#Find and Replace with regex
 wrong_name = "Mark decided to write in the hypertext markup language";	#our string
 replacement = re.sub(r'mark', 'Greg', wrong_name, flags=re.IGNORECASE)	#changing all instances of "Mark" with "Greg" with no case-sensitivity
 print replacement	#lulz at hypertext gregup language
