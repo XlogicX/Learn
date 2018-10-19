@@ -38,3 +38,20 @@ Overall opcodes/concepts demonstrated:
 * syscall: sys_exit, sys_write
 
 There is arguably a lot not covered, but that isn't the purpose of this project. The above opcodes should certainly get you in the right direction; they are the most common
+
+Linux API Calls (Meat)
+=====
+open (files.asm, preadwrite.asm, fctl.asm)
+close (files.asm, preadwrite.asm, fctl.asm)
+read (files.asm)
+write (files.asm, preadwrite.asm)
+lseek (files.asm)
+pread (preadwrite.asm)
+pwrite (preadwrite.asm)
+getpid (getpid.asm)
+getppid (getpid.asm)
+time (time.asm)
+gettimeofday (time.asm)
+fctl (fctl.asm)
+brk (brk.asm)
+exit (in all examples)
