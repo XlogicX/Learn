@@ -12,7 +12,7 @@ _start:
 
 ; Locate Current Heap End
 ;------------------------------------------------------------------------------
-	mov		eax, 78				;brk
+	mov		eax, 45				;brk
     mov		ebx, 0				;This will cause an error
     int		0x80				;which will return current heap end value
     mov		[brk_start], eax	;store that value in brk_start
