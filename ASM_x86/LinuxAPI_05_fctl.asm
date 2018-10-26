@@ -49,6 +49,9 @@ _start:
 section .data
 	newfile db 'newfile.txt', 0x00
 
+section .bss
+	filehandle resb 4
+	
 ; ------------------------------
 ; | Some bitfield explanations |
 ; ------------------------------
