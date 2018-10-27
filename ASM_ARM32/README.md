@@ -57,4 +57,6 @@ Linux API Calls (Meat)
 * mkdir (mkdir.asm)
 * rmdir (rmdir.asm)
 * getdents (getdents.asm)
+* signal (not supported by raspberry pi, outdated and non-recommended API call anyway)
+* kill (kill.asm
 * exit (in all examples)
