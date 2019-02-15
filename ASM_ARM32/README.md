@@ -83,3 +83,6 @@ Some LibC Functions (Meat)
   * free
   * realloc
   * memset
+* LibC_04_mem.s
+  * memcpy
+  * memcmp
