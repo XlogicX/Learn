@@ -75,4 +75,4 @@ Linux API Calls (Meat)
 Some LibC Functions (Meat)
 =====
 * LibC_02_error.s
-** strerror()
+  * strerror()
