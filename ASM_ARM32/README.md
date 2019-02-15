@@ -106,3 +106,7 @@ Some LibC Functions (Meat)
   * strcat
   * strcmp
   * strcasecmp
+* LibC_07_search.s
+  * memchr
+  * rawmemchr
+  * strstr
