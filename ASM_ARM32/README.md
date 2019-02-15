@@ -74,5 +74,7 @@ Linux API Calls (Meat)
 
 Some LibC Functions (Meat)
 =====
+* LibC_01_printf.s
+  * printf()
 * LibC_02_error.s
   * strerror()
