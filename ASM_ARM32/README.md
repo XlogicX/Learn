@@ -86,3 +86,17 @@ Some LibC Functions (Meat)
 * LibC_04_mem.s
   * memcpy
   * memcmp
+* LibC_05_chars.s
+  * isalnum
+  * isalpha
+  * isascii
+  * isblank
+  * iscntrl
+  * isdigit
+  * isgraph
+  * isprint
+  * ispunct
+  * isspace
+  * isupper
+  * tolower
+  * toupper
