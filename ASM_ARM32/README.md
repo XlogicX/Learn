@@ -100,3 +100,9 @@ Some LibC Functions (Meat)
   * isupper
   * tolower
   * toupper
+* LibC_06_strings.s
+  * strlen
+  * strcpy
+  * strcat
+  * strcmp
+  * strcasecmp
