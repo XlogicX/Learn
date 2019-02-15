@@ -78,3 +78,8 @@ Some LibC Functions (Meat)
   * printf()
 * LibC_02_error.s
   * strerror()
+* LibC_03_malloc.s
+  * malloc
+  * free
+  * realloc
+  * memset
