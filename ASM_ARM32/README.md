@@ -110,3 +110,6 @@ Some LibC Functions (Meat)
   * memchr
   * rawmemchr
   * strstr
+* LibC_08_lfind.s
+  * strncmp
+  * lfind
