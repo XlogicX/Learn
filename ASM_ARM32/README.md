@@ -71,3 +71,8 @@ Linux API Calls (Meat)
 * wait4 (fork.s)
 * execve (fork.s)
 * exit (in all examples)
+
+Some LibC Functions (Meat)
+=====
+* LibC_02_error.s
+** strerror()
