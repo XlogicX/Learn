@@ -126,3 +126,6 @@ Some LibC Functions (Meat)
   * scanf
 * LibC_13_getpass.s
   * getpass
+* LibC_14_basename.s
+  * basename
+  * dirname
