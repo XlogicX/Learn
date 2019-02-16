@@ -124,3 +124,5 @@ Some LibC Functions (Meat)
   * puts
 * LibC_12_scanf.s
   * scanf
+* LibC_13_getpass.s
+  * getpass
