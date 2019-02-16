@@ -73,12 +73,12 @@ Linux API Calls (Meat)
 * execve (fork.s)
 * exit (in all examples)
 
-Some LibC Functions (Meat)
+Some (53) LibC Functions (Meat)
 =====
 * LibC_01_printf.s
-  * printf()
+  * printf
 * LibC_02_error.s
-  * strerror()
+  * strerror
 * LibC_03_malloc.s
   * malloc
   * free
