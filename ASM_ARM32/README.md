@@ -129,3 +129,6 @@ Some LibC Functions (Meat)
 * LibC_14_basename.s
   * basename
   * dirname
+* LibC_15_stringtrash.s
+  * strfry
+  * memfrob
