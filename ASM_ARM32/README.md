@@ -138,3 +138,7 @@ Some LibC Functions (Meat)
   * regcomp
   * regexec
   * regfree
+* LibC_18_syslog.s
+  * openlog
+  * syslog
+  * closelog
