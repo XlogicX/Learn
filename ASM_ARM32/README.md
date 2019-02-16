@@ -118,3 +118,6 @@ Some LibC Functions (Meat)
 * LibC_10_getchar.s
   * getchar
   * putchar
+* LibC_11_gets.s
+  * gets
+  * puts
