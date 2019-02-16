@@ -134,3 +134,7 @@ Some LibC Functions (Meat)
   * memfrob
 * LibC_16_fnmatch.s
   * fnmatch
+* LibC_17_regex.s
+  * regcomp
+  * regexec
+  * regfree
