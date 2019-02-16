@@ -145,3 +145,5 @@ Some LibC Functions (Meat)
 * LibC_19_random.s
   * rand
   * srand
+* LibC_20_localtime.s
+  * localtime
