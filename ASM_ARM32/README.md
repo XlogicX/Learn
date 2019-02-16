@@ -132,3 +132,5 @@ Some LibC Functions (Meat)
 * LibC_15_stringtrash.s
   * strfry
   * memfrob
+* LibC_16_fnmatch.s
+  * fnmatch
