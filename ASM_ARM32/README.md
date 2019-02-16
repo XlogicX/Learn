@@ -142,3 +142,6 @@ Some LibC Functions (Meat)
   * openlog
   * syslog
   * closelog
+* LibC_19_random.s
+  * rand
+  * srand
