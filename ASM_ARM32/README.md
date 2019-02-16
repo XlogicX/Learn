@@ -147,3 +147,5 @@ Some LibC Functions (Meat)
   * srand
 * LibC_20_localtime.s
   * localtime
+* LibC_21_crypt.s
+  * crypt.s
