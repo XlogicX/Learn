@@ -7,17 +7,18 @@ Editor: nano
 
 Assembler: as
 
-Linker: ld
+Linker: ld (or gcc if using libc functions)
 
 Commands to assemble and link:<br> 
 as skeleton.s -o skeleton.o<br>
-ld skeleton.o -o skeleton
+ld skeleton.o -o skeleton<br>
+(gcc skeleton.o -o skeleton) - for demo programs with libc functions
 
 Execution: ./skeleton
 
 Debugger (USE THIS when learning): gdb (with custom .gdbinits):<br>
 GEF: https://github.com/hugsy/gef - This one is great but fucks up on subroutines for below GDB 8.1 (so Raspbian is affected by this)<br>
-reverse.put.as: https://github.com/gdbinit/Gdbinit - Doesn't fuck up on subs, but less features and details as GEF<br>
+reverse.put.as: https://github.com/gdbinit/Gdbinit - Doesn't fuck up on subs, but less features and details as GEF, must edit a line to enable ARM and you may have to comment out a couple of lines that cause errors.<br>
 
 ASM diff
 =====
