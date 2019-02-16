@@ -113,3 +113,5 @@ Some LibC Functions (Meat)
 * LibC_08_lfind.s
   * strncmp
   * lfind
+* LibC_09_qsort.s
+  * qsort
