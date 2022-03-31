@@ -21,10 +21,10 @@ GDB
 =====
 There are also great gdb init files to make the gdb debugger more 'usable.' These 'enhanced' visuals show most of the pertinent information going on in the CPU and memory/stack for each instruction step, without you having to query each individual thing (especially since you may not know which things are even worth querying).
 
-I still highly recommend 'gef':
+I still highly recommend 'gef':<br>
 https://gef.readthedocs.io/en/master/
 
-This is also a good newer alternative:
+This is also a good newer alternative:<br>
 https://github.com/cyrus-and/gdb-dashboard
 
 "Installation" for both are a simple oneliner command (shown on the corresponding doc page for each).
@@ -33,10 +33,10 @@ GDB has TONS of commands and features you could know. Here are some essential on
 
 br
 ====
-You can breakpoint on labels and addresses. An example of breakpointing the beginning of the skeleton:
-br _start
-An example of breakpointing an arbitrary address in program memory:
-br *0x100a50
+You can breakpoint on labels and addresses. An example of breakpointing the beginning of the skeleton:<br>
+br _start<br>
+An example of breakpointing an arbitrary address in program memory:<br>
+br *0x100a50<br>
 
 info files
 ====
@@ -48,7 +48,7 @@ Actually starts running the program, but make sure to set your breakpoint first,
 
 si
 ====
-Single step an instruction, one at a time. In other debuggers, this can also be known as the 'step into' kind of stepping. If you want to step by a fixed amount of instructions more than just one, you can specify how many instructions you want to step/skip by putting a number after the si command, for example:
+Single step an instruction, one at a time. In other debuggers, this can also be known as the 'step into' kind of stepping. If you want to step by a fixed amount of instructions more than just one, you can specify how many instructions you want to step/skip by putting a number after the si command, for example:<br>
 si 15
 
 ni
@@ -57,11 +57,11 @@ Also a step instruction (next), also known as 'step over'. Using this when on a 
 
 x
 ====
-Examine memory. This command has a lot of variety, this is how I personally approach the syntax:
-x /nf a
-Where n is the amount of bytes, f is the format, and a is the address (precede the address with a * to dereference as a pointer if you need). Formats can be things like x(hex), b(byte), s(string). Addresses should fit the 0xabcdef01 kind of format. An example could be
-x /4x 0x100a50
-Which is giving 4 hex formatted bytes starting at address 0x100a50
+Examine memory. This command has a lot of variety, this is how I personally approach the syntax:<br>
+x /nf a<br>
+Where n is the amount of bytes, f is the format, and a is the address (precede the address with a * to dereference as a pointer if you need). Formats can be things like x(hex), b(byte), s(string). Addresses should fit the 0xabcdef01 kind of format. An example could be<br>
+x /4x 0x100a50<br>
+Which is giving 4 hex formatted bytes starting at address 0x100a50<br>
 You can use any memory address that the program has permissions to, so this can be general purpose allocated memory, anywhere in the stack, and even the addresses that the program itself is in.
 
 cont
