@@ -129,3 +129,21 @@ Linux API Calls (Meat)
 * waitpid (fork.asm)
 * execve (fork.asm)
 * exit (in all examples)
+
+Next Steps
+=====
+Stepping through the skeleton with an understand for each instruction will have you nearly 90% up to speed on assembly and how it works, though, this is just a small part of the whole instruction set (though it's the most common and useful). This skeleton only covers some of the conditional jumps, some of the different ways of addressing memory, etc... Though, I would still stress that you'd be up to speed on understanding most assembly you'd come across. The first question I would be asked is something like: 'If this is all there is too it, why can't I write anything useful; a program that does anything real, like process a file or connect to the internet'. Only a small part of this would entail learning more assembly, the massive majority would be reaching beyond the language. Below are some recommended next steps
+
+Read a Book
+====
+Stepping through the assembled skeleton in a debugger with a full undertanding may only take about 1 to 2 hours. It's a nice way to cut to the chase and bypass a book. I also beleive that most books on assembly take the wrong approach to teaching (they either wait 100's of pages until getting practical (most of the books), or sacrifice low level concepts for immediate practicality (i.e. The Art of Assembly)). That said, after running through the skeleton, you will have gotten your hands very dirty. With that behind you, pretty mich any good book on assembly is going to make way more sense, and you can expiriment with all the pre-practical theory before the book puts it into practice. You could try skipping the step of reading a book and go to the next steps below, you honestly might not need a book and could just rely on a search engine for small questions that come up along the way. But if the next steps are a struggle, then a book is a good option.
+
+Learn the Linux API
+====
+These assembly examples are Linux centered, but if you were expirimenting with a different OS, they have their own APIs you could learn instead. There's a good No Starch Press book on the Linux API, it's thick, but a great reference. Of the different Assembly flavors in this repo, the x86 one has some good Linux API examples. Note that x64 could have some differences, such as how arguments are passed to the API (stack centered instead of register), but the other concepts remain consistent.
+
+There are enough Linux API functions out there to allow you to do virtually anything you may want to do in a program, albiet with a little effort for some things, but the power to communicate with the 'outside' is now in your hands (like files and sockets). Though there are many API functions, the examples on this repo list some of the really useful ones (my subjective opinion).
+
+LibC
+====
+Learn to use C libraries from your assembly program. I also have some stripped down examples of some common/useful C library calls in this repo, they are unfortunately only in the ARM flavor in this project, but with a small effort, you could convert to x86 flavors. The major differences are using gcc (instead of nasm), and main (instead of _start). Otherwise, the structure is similar: you load the arguments up to registers/stack, and call/branch/int to the function (call printf).
