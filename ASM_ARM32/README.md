@@ -16,9 +16,58 @@ ld skeleton.o -o skeleton<br>
 
 Execution: ./skeleton
 
-Debugger (USE THIS when learning): gdb (with custom .gdbinits):<br>
-GEF: https://github.com/hugsy/gef - This one is great but fucks up on subroutines for below GDB 8.1 (so Raspbian is affected by this)<br>
-reverse.put.as: https://github.com/gdbinit/Gdbinit - Doesn't fuck up on subs, but less features and details as GEF, must edit a line to enable ARM and you may have to comment out a couple of lines that cause errors.<br>
+GDB
+=====
+There are also great gdb init files to make the gdb debugger more 'usable.' These 'enhanced' visuals show most of the pertinent information going on in the CPU and memory/stack for each instruction step, without you having to query each individual thing (especially since you may not know which things are even worth querying).
+
+I still highly recommend 'gef':<br>
+https://gef.readthedocs.io/en/master/
+
+This is also a good newer alternative:<br>
+https://github.com/cyrus-and/gdb-dashboard
+
+"Installation" for both are a simple oneliner command (shown on the corresponding doc page for each).
+
+GDB has TONS of commands and features you could know. Here are some essential ones in the context of following this skeleton
+
+br
+====
+You can breakpoint on labels and addresses. An example of breakpointing the beginning of the skeleton:<br>
+br _start<br>
+An example of breakpointing an arbitrary address in program memory:<br>
+br *0x100a50<br>
+
+info files
+====
+Gives good amount of info about the program structure, and notably gives the address of the entry point when things like '_start', 'start', or 'main' aren't working for you (you can just use the address of the entry point).
+
+run
+====
+Actually starts running the program, but make sure to set your breakpoint first, or it will run right past you. If you are in the middle of the program somewhere, running this command again is effectively 'restart'
+
+si
+====
+Single step an instruction, one at a time. In other debuggers, this can also be known as the 'step into' kind of stepping. If you want to step by a fixed amount of instructions more than just one, you can specify how many instructions you want to step/skip by putting a number after the si command, for example:<br>
+si 15
+
+ni
+====
+Also a step instruction (next), also known as 'step over'. Using this when on a CALL instruction will execute everything that the CALL references until after the return; so it steps over it to the next instruction you see after the CALL (but still executes everything in the call). This is good for not having to debug library code or well understood functions (especially deep and wide loops)
+
+x
+====
+Examine memory. This command has a lot of variety, this is how I personally approach the syntax:<br>
+x /nf a<br>
+Where n is the amount of bytes, f is the format, and a is the address (precede the address with a * to dereference as a pointer if you need). Formats can be things like x(hex), b(byte), s(string). Addresses should fit the 0xabcdef01 kind of format. An example could be<br>
+x /4x 0x100a50<br>
+Which is giving 4 hex formatted bytes starting at address 0x100a50<br>
+You can use any memory address that the program has permissions to, so this can be general purpose allocated memory, anywhere in the stack, and even the addresses that the program itself is in.<br>
+It is highly recommended that you expiriment with this command during the memory operations in the skeleton, both before and after execution of them (to see how the data in the memory locations change.
+
+cont
+====
+This continues the running of the program. This will keep running the program until it either finishes execution, or hits the next breakpoint
+
 
 ASM diff
 =====
