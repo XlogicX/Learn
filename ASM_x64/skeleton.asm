@@ -1,9 +1,5 @@
 section .bss
-    whocares    resb    1       ; This would normally be a nasm way to access a
-                                ; 1-byte variable called "whocares", but we will
-                                ; just use any direct memory in the 60001xxx
-                                ; range. Seems we still have to reseve at least
-                                ; this though.
+    memory    resb    1       ; Reserving a block of memory
 
 section     .text
 global      _start			;must be declared for linker (ld)
@@ -58,17 +54,17 @@ _start:						;tell linker entry point
 ;Memory
 ;We are putting "Hello World!" into memory
     mov     eax, 00000a21h      ;mov "!" and carriage return into eax
-    mov     [0x006000cc], eax   ;move that into memory location 0x00600100
+    mov     [memory], eax   ;move that into memory location 0x00600100
                                 ;You should usually reserve memory with your assembler
                                 ;program and refer to address as a variable, but we
                                 ;are trying to rely on these features as little as 
                                 ;possible for these examples
     mov     eax, 646c726fh      ;mov "dlro"
-    mov     [0x006000c8], eax
+    mov     [memory-4], eax
     mov     eax, 57202c6fh      ;mov "W ,o"
-    mov     [0x006000c4], eax
+    mov     [memory-8], eax
     mov     eax, 6c6c6548h      ;mov "lleH"
-    mov     [0x006000c0], eax                         
+    mov     [memory-12], eax                         
 
 ;Shiftiness
     xor     eax, eax            ;clear eax
@@ -107,7 +103,7 @@ _start:						;tell linker entry point
 
 ;"Subroutine To print Hello World"
     xor     eax, eax                ;Clear eax
-    mov     ecx, 0x006000c0         ;point to start of Hello World text
+    mov     ecx, memory-12         ;point to start of Hello World text
     mov     edx, 14                 ;it will be 14 bytes
     mov     eax, 4                  ;"write" syscal
     int     0x80                    ;Invoke the Penguin
