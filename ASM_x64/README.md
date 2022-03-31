@@ -62,7 +62,8 @@ x /nf a<br>
 Where n is the amount of bytes, f is the format, and a is the address (precede the address with a * to dereference as a pointer if you need). Formats can be things like x(hex), b(byte), s(string). Addresses should fit the 0xabcdef01 kind of format. An example could be<br>
 x /4x 0x100a50<br>
 Which is giving 4 hex formatted bytes starting at address 0x100a50<br>
-You can use any memory address that the program has permissions to, so this can be general purpose allocated memory, anywhere in the stack, and even the addresses that the program itself is in.
+You can use any memory address that the program has permissions to, so this can be general purpose allocated memory, anywhere in the stack, and even the addresses that the program itself is in.<br>
+It is highly recommended that you expiriment with this command during the memory operations in the skeleton, both before and after execution of them (to see how the data in the memory locations change.
 
 cont
 ====
