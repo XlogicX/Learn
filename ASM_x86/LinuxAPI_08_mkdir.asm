@@ -13,7 +13,7 @@ _start:
 ;------------------------------------------------------------------------------
 	mov		eax, 39				;mkdir
 	mov		ebx, newdir			;pointer to the directory name
-	mov		ecx, 700o			;Read/Write for Owner
+	mov		ecx, 700o			;Read/Write/Execute for Owner
 	int		0x80
 
 
