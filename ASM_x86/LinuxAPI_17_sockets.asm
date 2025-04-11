@@ -36,7 +36,7 @@ _start:
 	mov		eax, 4				; write
 	mov		ebx, [sockhandle]	; handle for newly opened socket
 	mov		ecx, getrequest		; location of contents to write (the GET request)
-	mov		edx, 56				; how many bytes to write
+	mov		edx, 60				; how many bytes to write
 	int		0x80
 
 ; Read bytes from the webpage
@@ -88,7 +88,7 @@ section .data
 	;221 - 3,707,764,736
 	;3710223208
 
-	getrequest	db 'GET / HTTP/1.1', 0x0a, 'Host: xlogicx.net', 0x0a, 'User-Agent: Deez Nuts', 0x0a, 0x0a
+	getrequest	db 'GET / HTTP/1.1', 0x0d,0x0a, 'Host: xlogicx.net', 0x0d,0x0a, 'User-Agent: Deez Nuts', 0x0d,0x0a, 0x0d,0x0a
 
 section .bss
 	sitebuffer resb 10000
